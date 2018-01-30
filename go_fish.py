@@ -116,7 +116,7 @@ class Hand:
     # if True, output: True, and the rank
     # if False, output: False, and None
     def isFour(self):
-        ranks = self.cards.get_rank()
+        ranks = self.get_rank()
         rank_count = {}
         for r in ranks:
             rank_count[r] = rank_count.get(r, 0) + 1
